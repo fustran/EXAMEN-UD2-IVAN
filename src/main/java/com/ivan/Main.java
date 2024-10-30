@@ -1,16 +1,12 @@
 package com.ivan;
 
-/**
- * Hello world!
- *
- */
 public class Main 
 {
-    public void main( String[] args )
+    public static void main( String[] args )
     {
        Examen examen = new Examen();
-        examen.examen();
-        examen.examen2();
+        //examen.ejercicio1();
+        examen.ejercicio2();
 
 
     }
