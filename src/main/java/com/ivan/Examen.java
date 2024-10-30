@@ -41,19 +41,15 @@ public class Examen {
                 if (anyoIntroducido <= 1899 || anyoIntroducido >= 2025){
                     System.out.println("ERROR: No puedes introducir años menores a 1900 y mayores a 2024");
                     System.out.println("Vuelve a intentarlo, introduce el año:");
-                    teclado.next();
                     entradaValida = false;
                 }
-                
             }
-
             for (int anyoMinimo = anyoIntroducido; anyoMinimo <= 2024; anyoMinimo++){
 
                 if (anyoMinimo % 4 == 0 && anyoMinimo % 100 != 0 || (anyoMinimo % 400 == 0)){
                     System.out.println("El año" + anyoMinimo + " es bisiesto");
                     esBisiesto++;
-                }
-                
+                } 
             }
             System.out.println("");
             System.out.println("Ha habido " + esBisiesto + " años bisiestos");
